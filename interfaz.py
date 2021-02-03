@@ -57,4 +57,5 @@ elif seccion == 'Visualización':
     st.markdown(texto, unsafe_allow_html=True)
     
 elif seccion == 'Conclusión':
-    st.write('prueba')
+    conclusion = Path('conclusion.md').read_text()
+    st.markdown(conclusion, unsafe_allow_html=True)
